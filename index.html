@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.7">
+  <style type="text/css">
+    span.s1 {font-kerning: none}
+    span.s2 {font: 24.0px 'Apple Color Emoji'; font-kerning: none}
+  </style>
+</head>
+<body>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b>将内容保存为 `camera-demo.html`。摄像头通常需要在 `https://` 或 `localhost` 环境运行，直接双击文件可能被浏览器禁止。</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b>```html</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;!doctype html&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;html lang="zh-CN"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;head&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;title&gt;购物页面演示&lt;/title&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;style&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>* { box-sizing: border-box; }</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>body {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>margin: 0;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>font-family: Arial, "Microsoft YaHei", sans-serif;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>background: #f5f5f5;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #333;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.notice {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 12px 20px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>background: #fff3cd;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #664d03;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>border-bottom: 1px solid #ffecb5;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>text-align: center;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 14px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>header {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>background: #ff6200;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>color: white;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 18px 24px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>header h1 {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>margin: 0 0 12px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 24px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.search {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>display: flex;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>max-width: 680px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.search input {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>flex: 1;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 12px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>border: 0;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 15px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.search button {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 0 24px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>border: 0;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>background: #222;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>color: white;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>cursor: pointer;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>main {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>max-width: 1000px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>margin: 24px auto;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 0 16px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.products {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>display: grid;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>gap: 16px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.product {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>background: white;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>border-radius: 8px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>overflow: hidden;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>box-shadow: 0 2px 8px #0001;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.product .image {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>height: 150px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>display: grid;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>place-items: center;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, #ffd7b5, #fff1e6);</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 52px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.product .info {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 14px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.price {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #f40;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 22px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>font-weight: bold;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.camera-panel {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>margin-top: 28px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 20px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>background: white;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>border-radius: 8px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>box-shadow: 0 2px 8px #0001;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.camera-panel h2 {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>margin-top: 0;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 20px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.explain {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #666;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>line-height: 1.6;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 14px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>video {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>display: block;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>width: 100%;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>max-width: 640px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>min-height: 180px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>margin: 16px 0;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>background: #111;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>border-radius: 6px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>object-fit: cover;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>.buttons {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>display: flex;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>gap: 10px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>flex-wrap: wrap;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>button.action {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>padding: 10px 16px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>border: 0;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>border-radius: 5px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>color: white;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>cursor: pointer;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>background: #1677ff;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>button.stop {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>background: #d93025;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>button:disabled {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>opacity: .55;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>cursor: not-allowed;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>#status {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>margin-top: 12px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>color: #555;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>font-size: 14px;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/style&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/head&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;body&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;div class="notice"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>这是一个购物页面演示，不属于任何真实平台。摄像头仅在你主动授权后本地预览，不会上传或分享。</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;header&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;h1&gt;购物页面演示&lt;/h1&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;div class="search"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;input type="search" placeholder="搜索商品"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;button type="button"&gt;搜索&lt;/button&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/header&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;main&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;section class="products"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;article class="product"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="image"&gt;</b></span><span class="s2">🎧</span><span class="s1"><b>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="info"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;div&gt;无线耳机演示款&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;div class="price"&gt;¥129&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/article&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;article class="product"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="image"&gt;</b></span><span class="s2">⌚</span><span class="s1"><b>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="info"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;div&gt;智能手表演示款&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;div class="price"&gt;¥299&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/article&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;article class="product"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="image"&gt;</b></span><span class="s2">🎒</span><span class="s1"><b>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="info"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;div&gt;旅行背包演示款&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;div class="price"&gt;¥89&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/article&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;article class="product"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="image"&gt;</b></span><span class="s2">👟</span><span class="s1"><b>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;div class="info"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;div&gt;运动鞋演示款&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>&lt;div class="price"&gt;¥199&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/article&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/section&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;section class="camera-panel"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;h2&gt;摄像头授权演示&lt;/h2&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;p class="explain"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>点击下方按钮后，浏览器会显示摄像头授权提示。只有选择“允许”后，</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>画面才会出现在本页面中。视频仅保留在当前设备，不会发送到服务器。</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/p&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;video id="preview" autoplay playsinline muted&gt;&lt;/video&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div class="buttons"&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;button id="startBtn" class="action"&gt;开启摄像头&lt;/button&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>&lt;button id="stopBtn" class="action stop" disabled&gt;停止摄像头&lt;/button&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>&lt;div id="status"&gt;当前状态：未开启&lt;/div&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>&lt;/section&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/main&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;script&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>let stream = null;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>const preview = document.getElementById("preview");</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>const startBtn = document.getElementById("startBtn");</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>const stopBtn = document.getElementById("stopBtn");</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>const statusText = document.getElementById("status");</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>startBtn.addEventListener("click", async () =&gt; {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>statusText.textContent =</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>"当前浏览器或运行环境不支持摄像头访问，请使用 HTTPS 或 localhost。";</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>return;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>try {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>stream = await navigator.mediaDevices.getUserMedia({</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>video: true,</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>audio: false</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>});</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>preview.srcObject = stream;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>startBtn.disabled = true;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>stopBtn.disabled = false;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>statusText.textContent = "当前状态：摄像头已开启，仅在本机预览";</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>} catch (error) {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>statusText.textContent =</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">          </span>"未获得摄像头权限，或摄像头不可用：" + error.name;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>});</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>stopBtn.addEventListener("click", () =&gt; {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>if (stream) {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>stream.getTracks().forEach(track =&gt; track.stop());</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>stream = null;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>preview.srcObject = null;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>startBtn.disabled = false;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>stopBtn.disabled = true;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>statusText.textContent = "当前状态：已停止";</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>});</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000; min-height: 33.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>window.addEventListener("beforeunload", () =&gt; {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>if (stream) {</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">        </span>stream.getTracks().forEach(track =&gt; track.stop());</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">      </span>}</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">    </span>});</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b><span class="Apple-converted-space">  </span>&lt;/script&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/body&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b>&lt;/html&gt;</b></span></h1>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px 'Songti SC'; -webkit-text-stroke: #000000"><span class="s1"><b>```</b></span></h1>
+</body>
+</html>
