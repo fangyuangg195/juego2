@@ -1,42 +1,146 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="zh">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
-    span.s1 {font-kerning: none}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>调用摄像头示例</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #111827;
+      color: white;
+    }
+
+    .container {
+      width: min(90vw, 500px);
+      text-align: center;
+    }
+
+    video {
+      width: 100%;
+      max-width: 480px;
+      height: auto;
+      background: #000;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      border: 2px solid #374151;
+    }
+
+    .controls {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    button {
+      padding: 10px 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      background: #2563eb;
+      color: white;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    button.secondary {
+      background: #4b5563;
+    }
+
+    button.secondary:hover {
+      background: #374151;
+    }
+
+    .status {
+      margin-top: 12px;
+      min-height: 24px;
+      color: #fbbf24;
+    }
+
+    .error {
+      color: #f87171;
+    }
   </style>
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="zh"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;调用摄像头示例&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- 用于显示摄像头画面的视频标签 --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;video id="myVideo" autoplay playsinline width="400" height="300"&gt;&lt;/video&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 请求同时开启视频（摄像头）和音频（麦克风）</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>navigator.mediaDevices.getUserMedia({ video: true, audio: true })</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>.then(stream =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// 成功获取到 stream（媒体流）后，将其传给 video 标签播放</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const videoElement = document.getElementById('myVideo');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>videoElement.srcObject = stream;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>})</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>.catch(error =&gt; {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// 如果用户拒绝了权限，或者设备没有摄像头，会走到这里</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>console.error("获取媒体设备失败:", error);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+  <div class="container">
+    <video id="myVideo" autoplay playsinline muted></video>
+
+    <div class="controls">
+      <button id="startBtn">开启摄像头</button>
+      <button id="stopBtn" class="secondary">关闭摄像头</button>
+    </div>
+
+    <div id="status" class="status"></div>
+  </div>
+
+  <script>
+    const video = document.getElementById('myVideo');
+    const startBtn = document.getElementById('startBtn');
+    const stopBtn = document.getElementById('stopBtn');
+    const statusBox = document.getElementById('status');
+
+    let stream = null;
+
+    function setStatus(message, isError = false) {
+      statusBox.textContent = message;
+      statusBox.classList.toggle('error', isError);
+    }
+
+    async function startCamera() {
+      if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+        setStatus('当前浏览器不支持访问摄像头。', true);
+        return;
+      }
+
+      try {
+        setStatus('正在请求摄像头权限...');
+
+        stream = await navigator.mediaDevices.getUserMedia({
+          video: {
+            facingMode: 'user',
+            width: { ideal: 1280 },
+            height: { ideal: 720 }
+          },
+          audio: true
+        });
+
+        video.srcObject = stream;
+        setStatus('摄像头已开启。');
+      } catch (error) {
+        console.error('获取媒体设备失败:', error);
+        setStatus('无法访问摄像头或麦克风。请检查浏览器权限。', true);
+      }
+    }
+
+    function stopCamera() {
+      if (stream) {
+        stream.getTracks().forEach(track => track.stop());
+        stream = null;
+      }
+
+      if (video.srcObject) {
+        video.srcObject.getTracks().forEach(track => track.stop());
+        video.srcObject = null;
+      }
+
+      setStatus('摄像头已关闭。');
+    }
+
+    startBtn.addEventListener('click', startCamera);
+    stopBtn.addEventListener('click', stopCamera);
+
+    window.addEventListener('beforeunload', stopCamera);
+  </script>
 </body>
 </html>
